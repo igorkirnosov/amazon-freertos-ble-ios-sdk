@@ -1,4 +1,4 @@
-platform :ios, '14.1'
+platform :ios, '14.5'
 use_frameworks!
 
 target 'AmazonFreeRTOS' do

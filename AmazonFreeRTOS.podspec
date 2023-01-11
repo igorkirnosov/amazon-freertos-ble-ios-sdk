@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage      = "https://aws.amazon.com/freertos/"
   s.license       = "Apache License, Version 2.0"
   s.author        = { 'Amazon Web Services' => 'amazonwebservices' }
-  s.platform      = :ios, '10.0'
+  s.platform      = :ios, '14.5'
   s.swift_version = "5.5"
   s.source        = { :git => "https://github.com/aws/amazon-freertos-ble-ios-sdk.git", :tag => "1.4.0" }
   s.source_files  = "AmazonFreeRTOS/**/*.{swift,m,h}"

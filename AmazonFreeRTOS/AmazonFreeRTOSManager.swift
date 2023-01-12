@@ -1,5 +1,4 @@
 import AWSIoT
-import AWSCore
 import CBORCoding
 import CoreBluetooth
 import os.log

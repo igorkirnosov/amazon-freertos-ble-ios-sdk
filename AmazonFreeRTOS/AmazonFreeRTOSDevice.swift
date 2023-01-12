@@ -70,7 +70,7 @@ public class AmazonFreeRTOSDevice: NSObject {
     internal func registerIoTDataManager(connect: Connect) -> Bool {
 
         let brokerEndpointParts = connect.brokerEndpoint.split(separator: ".")
-        guard let endpoint = AWSEndpoint(urlString: "https://\(connect.brokerEndpoint)"), brokerEndpointParts.count > 2, let serviceConfiguration = AWSServiceConfiguration(region: String(brokerEndpointParts[2]).aws_regionTypeValue(), endpoint: endpoint, credentialsProvider: credentialsProvider) else {
+        guard let endpoint = AWSEndpoint(URLString: "https://\(connect.brokerEndpoint)"), brokerEndpointParts.count > 2, let serviceConfiguration = AWSServiceConfiguration(regionType: String(brokerEndpointParts[2]).aws_regionTypeValue(), endpoint: endpoint, credentialsProvider: credentialsProvider) else {
             return false
         }
         AWSIoTDataManager.register(with: serviceConfiguration, forKey: peripheral.identifier.uuidString)

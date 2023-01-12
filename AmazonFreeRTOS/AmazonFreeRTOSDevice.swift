@@ -1,5 +1,6 @@
 import AWSIoT
 import CoreBluetooth
+import AWSCore
 
 /// FreeRTOS device.
 public class AmazonFreeRTOSDevice: NSObject {
